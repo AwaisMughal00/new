@@ -1,0 +1,274 @@
+/* === GLOBAL PREVENT SCROLL === */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* === MAIN HOME SECTION === */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #141414, #1f2633);
+  color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* === BANNER SECTION === */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85);
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.banner-text {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  word-wrap: break-word;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  color: #dddddd;
+}
+
+.profession {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #00e5ff;
+}
+
+/* === RED COLOR UTILITY === */
+.red {
+  color: #00e5ff;
+}
+
+/* === BOX CONTAINER === */
+.box-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* === BOX COMPONENT === */
+.home-section {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.home-section:hover {
+  transform: translateY(-5px);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  color: #00e5ff;
+}
+
+/* === SKILLS LIST === */
+.skills-list {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 2;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  color: #dddddd;
+}
+
+/* === CTA === */
+.cta p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.cta-btn {
+  background-color: #00e5ff;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #00e5ff;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 1024px) {
+  .banner-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .skills-list {
+    font-size: 1rem;
+  }
+
+  .home-section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 90vh;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+
+  .banner-text p,
+  .profession {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .skills-list {
+    font-size: 0.95rem;
+    padding-left: 0.5rem;
+  }
+
+  .home-section {
+    padding: 1.5rem;
+  }
+
+  .cta-btn {
+    padding: 0.6rem 1.3rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .banner-text p,
+  .profession {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .skills-list {
+    font-size: 0.9rem;
+  }
+
+  .cta-btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ Tiny Devices: Under 300px */
+@media (max-width: 300px) {
+  .banner-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .banner-text p,
+  .profession {
+    font-size: 0.75rem;
+  }
+
+  .cta-btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .skills-list {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+
+  .home-section {
+    padding: 1rem;
+  }
+}
+
+/* ✅ Nano Devices: Under 240px */
+@media (max-width: 240px) {
+  .banner-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .banner-text p,
+  .profession,
+  .cta p {
+    font-size: 0.65rem;
+  }
+
+  .cta-btn {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
+
+  .home-section {
+    padding: 0.8rem;
+  }
+}

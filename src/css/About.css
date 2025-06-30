@@ -1,0 +1,176 @@
+/* === MAIN ABOUT SECTION === */
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #141414, #1f2633);
+  color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === BANNER IMAGE === */
+.about-banner {
+  width: 100%;
+  height: 270vh;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 5px solid #00e5ff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
+/* === CONTAINER === */
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* === HEADINGS === */
+.about-title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0;
+  color: #00e5ff;
+}
+
+.section-heading {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #00e5ff;
+}
+
+/* === TEXT === */
+.about-intro {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+.highlight {
+  color: #00e5ff;
+  font-weight: 600;
+}
+
+/* === BOX SECTIONS === */
+.about-section {
+  margin-bottom: 3rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-5px);
+}
+
+/* === LIST STYLES === */
+.about-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+  line-height: 1.8;
+}
+
+.about-list li {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.7rem;
+  border-left: 4px solid #00e5ff;
+  border-radius: 8px;
+}
+
+/* === CTA BUTTON === */
+.about-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.about-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #cccccc;
+}
+
+.cta-btn {
+  background-color: #00e5ff;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #00e5ff;
+}
+
+/* === RESPONSIVE STYLES === */
+@media (max-width: 1024px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.4rem;
+  }
+
+  .about-intro {
+    font-size: 1.1rem;
+  }
+
+  .about-section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-banner {
+    height: 110vh;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .section-heading {
+    font-size: 1.3rem;
+  }
+
+  .about-intro {
+    font-size: 1rem;
+  }
+
+  .about-section {
+    padding: 1.5rem;
+  }
+
+  .cta-btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.9rem;
+  }
+
+  .section-heading {
+    font-size: 1.2rem;
+  }
+
+  .about-intro {
+    font-size: 0.95rem;
+  }
+
+  .cta-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+  }
+}

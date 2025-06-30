@@ -1,0 +1,62 @@
+.privacy-section {
+  background: linear-gradient(to bottom, #141414, #1f2633);
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 4rem 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.privacy-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.privacy-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #00e5ff;
+}
+
+.privacy-container h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #00e5ff;
+}
+
+.privacy-container p,
+.privacy-container li {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #cccccc;
+}
+
+.privacy-container ul {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.update-note {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  text-align: right;
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  .privacy-container {
+    padding: 1.5rem;
+  }
+
+  .privacy-container h1 {
+    font-size: 2rem;
+  }
+
+  .privacy-container h2 {
+    font-size: 1.3rem;
+  }
+}
